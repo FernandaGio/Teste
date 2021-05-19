@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lblDescricao" layoutX="60.0" layoutY="148.0" text="*Descrição(50):" AnchorPane.leftAnchor="60.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCLassificacao" layoutX="62.0" layoutY="176.0" text="*Classificação:" AnchorPane.leftAnchor="62.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblFornecedor" layoutX="62.0" layoutY="204.0" text="*Fornecedor:" AnchorPane.leftAnchor="62.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMarca" layoutX="63.0" layoutY="232.0" text="*Marca:" AnchorPane.leftAnchor="63.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblQuantAtual" layoutX="63.0" layoutY="260.0" text="*Quant. Atual:" AnchorPane.leftAnchor="63.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEstMin" layoutX="67.0" layoutY="290.0" text="Estoque Mín.:" AnchorPane.leftAnchor="67.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtEstadoItem" layoutX="67.0" layoutY="320.0" text="Estado do Item:" AnchorPane.leftAnchor="67.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblLocal" layoutX="266.0" layoutY="260.0" text="*Local:" AnchorPane.leftAnchor="266.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="138.0" layoutY="93.0" text="Informações do Item">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Circle fill="#bcc9d9" layoutX="255.0" layoutY="55.0" radius="34.0" stroke="BLACK" strokeType="INSIDE" />
+      <TextField fx:id="txtDescricao" layoutX="173.0" layoutY="148.0" prefHeight="25.0" prefWidth="291.0" style="-fx-background-radius: 30;" AnchorPane.leftAnchor="173.0" AnchorPane.rightAnchor="59.0" />
+      <TextField fx:id="txtClassificacao" layoutX="172.0" layoutY="176.0" prefHeight="25.0" prefWidth="291.0" style="-fx-background-radius: 30;" />
+      <ComboBox fx:id="cbClassificacao" layoutX="414.0" layoutY="176.0" prefHeight="25.0" prefWidth="23.0" style="-fx-background-radius: 30;" />
+      <TextField fx:id="txtFornecedor" layoutX="172.0" layoutY="204.0" prefHeight="25.0" prefWidth="291.0" style="-fx-background-radius: 30;" />
+      <ComboBox fx:id="cbFornecedor" layoutX="413.0" layoutY="204.0" prefHeight="25.0" prefWidth="23.0" style="-fx-background-radius: 30;" />
+      <TextField fx:id="txtMarca" layoutX="123.0" layoutY="232.0" prefHeight="25.0" prefWidth="122.0" style="-fx-background-radius: 30;" />
+      <ComboBox fx:id="cbMarca" layoutX="202.0" layoutY="232.0" prefHeight="25.0" prefWidth="35.0" style="-fx-background-radius: 30;" />
+      <TextField fx:id="txtQuantAtual" layoutX="166.0" layoutY="260.0" prefHeight="25.0" prefWidth="85.0" style="-fx-background-radius: 30;" />
+      <TextField fx:id="txtEstMin" layoutX="167.0" layoutY="288.0" prefHeight="25.0" prefWidth="85.0" style="-fx-background-radius: 30;" />
+      <Label fx:id="lblEstMax" layoutX="270.0" layoutY="288.0" text="Estoque Máx.:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDataEntrada" layoutX="61.0" layoutY="349.0" text="*Data de Entrada:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCodigo" layoutX="270.0" layoutY="233.0" text="Código:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEstMax" layoutX="373.0" layoutY="288.0" prefHeight="25.0" prefWidth="85.0" style="-fx-background-radius: 30;" />
+      <TextField fx:id="txtCodigo" layoutX="347.0" layoutY="233.0" prefHeight="25.0" prefWidth="111.0" style="-fx-background-radius: 30;" />
+      <TextField fx:id="txtLocal" layoutX="347.0" layoutY="260.0" prefHeight="25.0" prefWidth="111.0" style="-fx-background-radius: 30;" />
+      <DatePicker fx:id="dpDataEntrada" layoutX="194.0" layoutY="349.0" prefHeight="25.0" prefWidth="157.0" />
+      <CheckBox fx:id="checkbAtivo" layoutX="381.0" layoutY="317.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" text="Ativo" textAlignment="RIGHT">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="checkbInativo" layoutX="271.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Inativo" textAlignment="RIGHT">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="btCadastrar" layoutX="152.0" layoutY="403.0" mnemonicParsing="false" onAction="#onClickCadastrarItem" style="-fx-background-radius: 30;" text="Cadastrar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btSalvar" layoutX="261.0" layoutY="403.0" mnemonicParsing="false" onAction="#onClickSalvar" style="-fx-background-radius: 30;" text="Salvar Alteração">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="52.0" fitWidth="54.0" layoutX="229.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/Itens.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
